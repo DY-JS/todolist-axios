@@ -9,7 +9,7 @@ export const GetTodolists = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
         // const res = axios.get('https://social-network.samurai.com/api/1.1/todo-lists',
-        //     {withCredentials: true},)
+        // {withCredentials: true},)
         todoListApi.getTodoList()
             .then((res) => {
                 console.log(res)
